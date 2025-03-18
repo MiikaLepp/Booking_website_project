@@ -1,7 +1,7 @@
 import authRouter from './auth';
 import authenticatedRouter from './authenticated';
 import reviewsRouter from './reviews';
-import bookingsRouter from './bookings';
+// import bookingsRouter from './bookings';
 import hotelsRouter from './hotels';
 
 export const Routes = [
