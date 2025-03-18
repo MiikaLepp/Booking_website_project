@@ -1,0 +1,47 @@
+{
+  "name": "booking-api",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "geoip-lite": "^1.4.10",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "typescript": "^5.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/geoip-lite": "^1.4.4",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20.17.24",
+    "eslint": "^8.57.1",
+    "globals": "^15.13.0",
+    "gts": "^6.0.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.18.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc -p .",
+    "clean": "gts clean",
+    "lint": "gts check"
+  }
+}

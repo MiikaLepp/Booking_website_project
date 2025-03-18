@@ -1,0 +1,28 @@
+services:
+  main:
+    build:
+      context: .
+    container_name: booking-api
+    env_file:
+      - .env
+    ports:
+      - '5000:5000'
+    restart: unless-stopped
+    links:
+      - database
+    depends_on:
+      - database
+  database:
+    image: mongo
+    container_name: booking-db
+    restart: unless-stopped
+    volumes:
+      - ./data:/data/db
+
+    # Only for local development
+    ports:
+      - '27017:27017'
+
+volumes:
+  data:
+    driver: local

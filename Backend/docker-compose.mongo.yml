@@ -1,0 +1,13 @@
+services:
+  database:
+    image: mongo
+    container_name: mongodb
+    restart: unless-stopped
+    volumes:
+      - ./data:/data/db
+    ports:
+      - '27017:27017'
+
+volumes:
+  data:
+    driver: local

@@ -1,0 +1,87 @@
+/* Global fix to remove unwanted horizontal scroll */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    background-color: #3eb2ff; /* Dark teal/blue */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+/* Navigation Bar */
+.header-content nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left Side - Logo & Navigation */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 50px;
+    margin-right: 50px;
+}
+
+/* Navigation Buttons */
+.nav-button a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-button a:hover {
+    color: white;
+    background-color: #ff7f50;
+    border-radius: 5px;
+}
+
+/* Right Side - Login, Signup, Menu */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Login & Signup Buttons */
+.loginButton {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #ff5722;
+}
+
+/* Menu Button */
+#menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+#menuButton img {
+    height: 24px;
+    width: 24px;
+}
