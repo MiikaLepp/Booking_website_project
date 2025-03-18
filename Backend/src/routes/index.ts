@@ -17,10 +17,10 @@ export const Routes = [
     path: '/reviews',
     router: reviewsRouter
   },
-  {
-    path: '/bookings',
-    router: bookingsRouter
-  },
+  // {
+  //   path: '/bookings',
+  //   router: bookingsRouter
+  // },
   {
     path: '/hotels',
     router: hotelsRouter
